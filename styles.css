@@ -477,7 +477,19 @@ nav {
 }
 
 .replit {
-  background: rgb(28, 35, 51)
+  background: rgb(28, 35, 51);
+}
+
+.survey {
+  background: #05386B;
+}
+
+.tribute {
+  background: #ECD9BA;
+}
+
+.portfolio {
+  background: var(--purple);
 }
 
 h3 {
