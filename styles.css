@@ -157,13 +157,18 @@ nav {
 #welcome-section {
   position: relative;
   background: var(--purple);
-  height: 100vh;
-  min-height: 75rem;
+  height: max(100vh, min-content);
+}
+
+#welcome-section > .grid {
+  gap: 0;
 }
 
 .desc h1 {
   font-size: 4rem;
   font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 .desc {
@@ -182,7 +187,7 @@ nav {
   padding: 0;
   justify-self: center;
   z-index: 1;
-  margin-top: -1rem;
+  margin-top: 3rem;
   margin-right: -1rem;
 }
 
@@ -209,16 +214,16 @@ nav {
 
 .social {
   display: flex;
+  gap: 2rem;
   flex-direction: column;
   text-align: center;
   justify-self: end;
-  margin-top: -15rem;
+  margin-top: -11.5rem;
   z-index: 99;
 }
 
 .social a {
   width: 3.5rem;
-  margin-bottom: 2rem;
   font-size: 2rem;
   padding: .5rem;
   border: .2rem solid black;
@@ -599,8 +604,7 @@ h3 {
 /* Contact section */
 #contact {
   background: var(--turquoise);
-  height: 100vh;
-  min-height: 80rem;
+  height: max(100vh, min-content);
 }
 
 #contact > .grid > *:not(#contact-form) {
@@ -720,14 +724,11 @@ footer  {
   .grid {
     row-gap: 2rem;
   }
-  #welcome-section {
-    min-height: 64rem;
-  }
   .me-img{
-    margin: 0 -2rem 0 -1rem
+    margin-top: 2rem;
   }
   .social {
-    margin-top: -12rem;
+    margin-top: -11rem;
   }
   section {
     padding-top: calc(var(--header-height) + 2rem);
@@ -739,21 +740,15 @@ footer  {
   .certs {
     margin-top: -1rem !important;
   }
-  #contact {
-    min-height: 70rem;
-  }
 }
 
-@media screen and (min-width: 26.25em) { /*420px*/
-  #welcome-section {
-    min-height: 85rem;
+@media screen and (min-width: 30em) /*480px*/ {
+  .me-img {
+    margin-top: 0;
   }
 }
 
 @media screen and (min-width: 33.75em) /*540px*/ {
-  #welcome-section {
-    min-height: 95rem;
-  }
   .skills-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -770,6 +765,9 @@ footer  {
   .button:not(.project-desc .button) {
     font-size: 1.7rem;
   }
+  .desc h1 {
+    margin-bottom: 3rem;
+  }
   .home-buttons {
     row-gap: 2rem;
     grid-template-columns: repeat(auto-fill, 14.5rem);
@@ -781,12 +779,12 @@ footer  {
     margin-left: -1.6rem;
   }
   .social {
-    margin-top: -17rem;
+    margin-top: -15.5rem;
+    gap: 3rem;
   }
 
   .social a {
     width: 4.5rem;
-    margin-bottom: 3rem;
     font-size: 2.5rem;
     padding: .75rem .5rem;
   }
@@ -802,14 +800,8 @@ footer  {
   .grant {
     padding-left: 2rem;
   }
-  #contact {
-    min-height: 84rem;
-  }
 }
 @media screen and (min-width: 40em) { /*640px*/
-    #welcome-section {
-    min-height: 105rem;
-  }
   html {
     font-size: 68%;
   }
@@ -883,11 +875,8 @@ footer  {
     padding-left: 4rem;
     padding-right: 4rem;
   }
-  #welcome-section {
-    min-height: 110rem;
-  }
-  #contact {
-    min-height: 90rem;
+  .me-img{
+    margin-top: -1rem;
   }
   .other-skills {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -937,6 +926,12 @@ footer  {
   }
 }
 
+@media screen and (min-width: 51em) { /*816px*/
+.me-img{
+    margin-top: -3rem;
+  }
+}
+
 @media screen and (min-width: 61.875em) { /*990px*/
   #welcome-section {
     grid-template-columns: 1fr 1.5fr;
@@ -944,18 +939,17 @@ footer  {
   .home-buttons {
     gap: 3rem;
     grid-template-columns: 1fr;
+    margin-top: 4rem;
   }
   .button {
     padding-left: 1.5rem;
     margin: 0;
   }
-  .desc {
-    padding-top: 3rem;
-  }
   .me-img {
     justify-self: right;
-    margin-top: -10rem;
-    margin-bottom: -2.3rem;
+    margin-top: -17rem;
+    margin-bottom: -.6rem;
+    margin-right: -3rem;
   }
   .social {
     position: relative;
