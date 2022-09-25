@@ -336,7 +336,7 @@ nav {
   padding-top: .5rem;
 }
 
-.excel svg {
+.excel svg, .js svg {
   height: 4.9rem;
   width: 4.9rem;
   padding-top: .7rem;
@@ -346,6 +346,10 @@ nav {
   color: var(--orange);
   padding-top: 1rem;
 }
+
+.nowrap {
+    white-space: pre;
+  }
 
 .other-skills {
   display: grid;
@@ -495,6 +499,10 @@ nav {
 
 .portfolio {
   background: var(--purple);
+}
+
+.codepen {
+  background: rgb(6, 6, 6);
 }
 
 h3 {
@@ -782,7 +790,6 @@ footer  {
     margin-top: -15.5rem;
     gap: 3rem;
   }
-
   .social a {
     width: 4.5rem;
     font-size: 2.5rem;
@@ -801,6 +808,7 @@ footer  {
     padding-left: 2rem;
   }
 }
+
 @media screen and (min-width: 40em) { /*640px*/
   html {
     font-size: 68%;
@@ -849,6 +857,7 @@ footer  {
     padding-left: 0rem;
   }
 }
+
 @media screen and (min-width: 47.5em) { /*760px*/
   section {
     padding-top: calc(var(--header-height) + 7.5rem);
@@ -981,7 +990,6 @@ footer  {
     grid-column: 1;
     grid-row: 1;
   }
-  
   #skills > .grid {
     grid-template-columns : 1fr 1fr 4rem;
   }
@@ -1003,13 +1011,11 @@ footer  {
     padding: 0 4rem;
     margin-left: 4rem !important;
   }
-
   .skill-img figcaption {
     font-size: 1.5rem;
     position: relative;
     top: .5rem;
   }
-
   .skills-list div {
     flex-direction: column;
   }
@@ -1024,13 +1030,11 @@ footer  {
     grid-row: 3 !important;
     grid-column: 1 / 3;
   }
-
   .certs {
     grid-row: 2 / 4 !important;
     grid-column: 3;
     justify-self: end;
   }
-
   .certs > .button {
     padding: 0 .5rem;
     width: min-content;
