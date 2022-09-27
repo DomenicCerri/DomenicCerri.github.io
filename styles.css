@@ -480,6 +480,7 @@ nav {
 .nav-proj {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-auto-rows: 1fr;
   flex: 94.5rem 0 1;
 }
 
@@ -488,6 +489,7 @@ nav {
   color: var(--gold) !important;
   border-radius: 5rem !important;
   font-weight: 400 !important;
+  padding: 0.5rem !important;
 }
 
 .tablinks:not(.active):hover {
@@ -858,9 +860,6 @@ footer {
 
 @media screen and (min-width: 40em) {
   /*640px*/
-  html {
-    font-size: 68%;
-  }
   #skills > .grid {
     grid-template-columns: 1fr 4rem;
   }
@@ -1123,9 +1122,6 @@ footer {
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   }
-  html {
-    font-size: 72%;
-  }
 }
 
 @media screen and (min-width: 80em) {
@@ -1140,9 +1136,6 @@ footer {
   }
   .grant {
     gap: 0.6rem;
-  }
-  html {
-    font-size: 75%;
   }
 }
 
