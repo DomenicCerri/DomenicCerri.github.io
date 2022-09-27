@@ -533,7 +533,7 @@
               <a href="https://github.com/DomenicCerri/FCC-Number-Guessing-Game.git" target="_blank" class="button" rel="noopener">GitHub</a>
             </div>
           </div>
-          <div class="project-tile py-proj bash-proj handling-proj visuals-proj stats-proj note-proj excel-proj git-proj" id="project-tile">
+          <div class="project-tile py-proj bash-proj handling-proj visuals-proj stats-proj note-proj  git-proj" id="project-tile">
             <img class="project-img" src="https://raw.githubusercontent.com/DomenicCerri/DomenicCerri.github.io/main/assets/img/fmri-processing-and-analysis-preview.png" height="420" width="662.5" alt="fMRI Data Handling and Analysis project preview" />
             <h3>fMRI Data Handling and Analysis</h3>
             <div class="project-desc" id="project-desc">
@@ -541,7 +541,7 @@
               <a href="https://github.com/DomenicCerri/fMRI-processing-and-analysis" target="_blank" class="button" rel="noopener">GitHub</a>
             </div>
           </div>
-          <div class="project-tile py-proj handling-proj visuals-proj stats-proj note-proj excel-proj git-proj" id="project-tile">
+          <div class="project-tile py-proj handling-proj visuals-proj stats-proj note-proj git-proj" id="project-tile">
             <img class="project-img" src="https://raw.githubusercontent.com/DomenicCerri/DomenicCerri.github.io/main/assets/img/electrophysiology-processing-and-analysis-preview.png" height="420" width="662.5" alt="Electrophysiology Data Handling and Analysis project preview" />
             <h3>Electrophysiology Data Handling and Analysis</h3>
             <div class="project-desc" id="project-desc">
@@ -549,7 +549,7 @@
               <a href="https://github.com/DomenicCerri/Electrophysiology-processing-and-analysis" target="_blank" class="button" rel="noopener">GitHub</a>
             </div>
           </div>
-          <div class="project-tile py-proj handling-proj visuals-proj stats-proj note-proj excel-proj git-proj" id="project-tile">
+          <div class="project-tile py-proj handling-proj visuals-proj stats-proj note-proj git-proj" id="project-tile">
             <img class="project-img" src="https://raw.githubusercontent.com/DomenicCerri/DomenicCerri.github.io/main/assets/img/photometry-voltammetry-analysis-preview.png" height="420" width="662.5" alt="Photometry and Voltammetry Data Handling and Analysis project preview" />
             <h3>Photometry and Voltammetry Data Handling and Analysis</h3>
             <div class="project-desc" id="project-desc">
@@ -723,6 +723,46 @@
             <div class="project-desc" id="project-desc">
               <p>For this project I designed a cash register drawer function in JavaScript that accepts a purchase price, payment, and cash-in-drawer argument, and returns an object with keys for the drawer status and an array of change to be returned (if applicable). To avoid floating point precision issues, I multiply all numerical values passed in the arguments by 100 and round the products to the nearest integer; this operation is performed on a deep copy (using JSON.parse/stringify) of the nested cash-in-drawer array to avoid mutation. Next, my function calls a reduce function to get the sum of cash-in-drawer, and if this is equal to the value of change to be returned, returns the “CLOSED” status and the original cash-in-drawer argument. For other conditions, my function uses while loop to iterate over the denominations available in the drawer from largest to smallest, and if the denomination is less than or equal to the remaining change to be returned, it subtracts the maximum available value of that denomination from the remaining change and pushes that value (divided by 100) and denomination to an array of change to return. Once the remaining change is zero or all denominations have been checked, my function returns the “OPEN” status and the array of change if the remaining change is zero, otherwise it returns the “INSUFFICIENT_FUNDS” status and an empty array.</p>
               <a href="https://codepen.io/domeniccerri/pen/KKRywaZ?editors=1012" target="_blank" class="button" rel="noopener">Try on CodePen</a>
+            </div>
+          </div>
+          <div class="project-tile excel-proj handling-proj" id="project-tile">
+            <img class="project-img" src="https://raw.githubusercontent.com/DomenicCerri/DomenicCerri.github.io/main/assets/img/budget-preview.png" height="420" width="662.5" alt="Budget, Investment, & Retirement Estimator project preview" />
+            <h3>Budget, Investment & Retirement Estimator</h3>
+            <div class="project-desc" id="project-desc">
+              <p>I created this spreadsheet to estimate monthly and annual budgeting, personal investment returns, and retirement savings and income. I account for multiple flexible spending categories, effective tax rate, pre- and post-tax investments, credit card rewards, expected social security income, and inflation. Calculated values are highlighted with conditional formatting. I implement the PMT and FV Excel/Google Sheets functions to calculate disbursements and investments/inflation, respectively.</p>
+              <a href="https://docs.google.com/spreadsheets/d/1EfPpd3FBq_t6LTjeIUHD5-FjcTiNsU2ULVKaGhx-no8/edit?usp=sharing" target="_blank" class="button" rel="noopener">Try on Sheets</a>
+            </div>
+          </div>
+          <div class="project-tile excel-proj handling-proj more-proj" id="project-tile">
+            <img class="project-img" src="https://raw.githubusercontent.com/DomenicCerri/DomenicCerri.github.io/main/assets/img/animal-log-preview.png" height="420" width="662.5" alt="Research Subject Management Log project preview" />
+            <h3>Research Subject Management Log</h3>
+            <div class="project-desc" id="project-desc">
+              <p>I built this Excel spreadsheet in order to streamline monitoring and management of research animal colonies. I use conditional formatting to alert investigators to potential issues with their animals, and employ conditional calculations to provide key compliance milestones, where applicable. Users can toggle entries between active and inactive, respectively hiding or showing their status, and easily customize their view with preset sort and filter buttons. Custom data validation settings and alerts are enabled on all columns to ensure accurate data entry and discourage unintentional changes to formatting and equations.</p>
+              <a href="https://raw.githubusercontent.com/DomenicCerri/DomenicCerri.github.io/main/assets/data/Investigator-rat-log.xlsx" target="_blank" class="button" rel="noopener">Download</a>
+            </div>
+          </div>
+          <div class="project-tile handling-proj excel-proj" id="project-tile">
+            <img class="project-img" src="https://raw.githubusercontent.com/DomenicCerri/DomenicCerri.github.io/main/assets/img/refinance-preview.png" height="420" width="662.5" alt="Mortgage Refinance Calculator project preview" />
+            <h3>Mortgage Refinance Calculator</h3>
+            <div class="project-desc" id="project-desc">
+              <p>It can be challenging to make an informed choice between home mortgage refinancing products. I developed this spreadsheet to calculate directly comparable risk and reward metrics for multiple loan products and repayment scenarios. This spreadsheet takes as input the original and current principal, and the interest rate, term, fees, and points of different loan products (e.g. the original loan, and a 30-, 20-, and 15-year refinance loan), and calculates the difference in lifetime interest, interest each month, and monthly payments between all products, and the time period to recoup fees accounting for either savings in interest or monthly payments. I implement the PMT, NPER, and CUMIPMT Excel/Google Sheets functions to calculate planned payments, remaining payment periods, and lifetime interest, respectively.</p>
+              <a href="https://docs.google.com/spreadsheets/d/1k5lqfuNy4hswj5phDpqpLsQWfd-i2hyDS6-3wHeWqhw/edit?usp=sharing" target="_blank" class="button" rel="noopener">Try on Sheets</a>
+            </div>
+          </div>
+          <div class="project-tile handling-proj excel-proj" id="project-tile">
+            <img class="project-img" src="https://raw.githubusercontent.com/DomenicCerri/DomenicCerri.github.io/main/assets/img/med-nex-preview.png" height="420" width="662.5" alt="MED Associates Data Converter project preview" />
+            <h3>MED Associates Data Converter</h3>
+            <div class="project-desc" id="project-desc">
+              <p>I created this Excel-based tool for researchers that may be unfamiliar with data handling scripts to easily convert single-column text output from proprietary MED Associates behavior testing/DAQ systems into a standard tabular format organized by variable names. I use a brute force approach that applies a series of conditional logic functions to each cell. First, I copy the original data while checking for patterned breaks (cells without values), indicating the start of a new variable, and divide variables into new columns by shifting the copied data one column to the right at every detected break. Second, I use the Excel indirect, address, row, and column functions to create new addresses that begin at row 0 for the contents of each new data column. Finally, I use these new addresses to create a formatted copy of the data into the results sheet. To improve the user experience and help preserve the integrity of the equations, the intermediate functions are stored on hidden sheets and VBA macro buttons are provided that call the clear, copy, and calculate function on the input sheet, result sheet, and workbook, respectively. </p>
+              <a href="https://raw.githubusercontent.com/DomenicCerri/DomenicCerri.github.io/main/assets/data/MED-data-manipulator.xlsm" target="_blank" class="button" rel="noopener">Download</a>
+            </div>
+          </div>
+          <div class="project-tile more-proj" id="project-tile">
+            <img class="project-img" src="https://raw.githubusercontent.com/DomenicCerri/DomenicCerri.github.io/main/assets/img/arduino-preview.png" height="420" width="662.5" alt="Arduino Input and Output project preview" />
+            <h3>Arduino Input and Output</h3>
+            <div class="project-desc" id="project-desc">
+              <p>Precise, automatic, and often high-frequency timing and synchronization of experimental devices can be crucial for delivering experimental manipulations and/or collecting high-quality real-world scientific data. To this end, I have designed, tested, and implemented solutions using Arduino microcontrollers to integrate and transform real-time input and output signals from experimental hardware devices. I share a straightforward protocol for using an Arduino device to deliver high-frequency optogenetic stimulation and many of the C\C++ based Arduino programs (termed “sketches”) that I have created on my GitHub.</p>
+              <a href="https://github.com/DomenicCerri/Arduino-In-Out.git" target="_blank" class="button" rel="noopener">GitHub</a>
             </div>
           </div>
           <div class=" extra">
