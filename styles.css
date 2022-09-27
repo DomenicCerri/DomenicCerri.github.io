@@ -484,29 +484,29 @@ nav {
 }
 
 .tablinks {
-  background: var(--darkgrey);
-  color: var(--gold);
-  border-radius: 5rem;
-  font-weight: 400;
+  background: var(--darkgrey) !important;
+  color: var(--gold) !important;
+  border-radius: 5rem !important;
+  font-weight: 400 !important;
 }
 
 .tablinks:not(.active):hover {
-  background: var(--gold);
-  filter: brightness(50%);
-  color: var(--darkgrey);
+  background: var(--gold) !important;
+  filter: brightness(50%) !important;
+  color: var(--darkgrey) !important;
 }
 
 .active {
-  background: var(--gold);
-  border: var(--gold);
-  color: var(--darkgrey);
-  font-weight: 600;
+  background: var(--gold) !important;
+  border: var(--gold) !important;
+  color: var(--darkgrey) !important;
+  font-weight: 600 !important;
 }
 
 .active:hover {
-  background: var(--gold);
-  color: inherit;
-  cursor: default;
+  background: var(--gold) !important;
+  color: inherit !important;
+  cursor: default !important;
 }
 
 .projects-grid {
