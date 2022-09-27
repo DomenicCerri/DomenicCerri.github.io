@@ -503,6 +503,7 @@ nav {
   border: var(--gold) !important;
   color: var(--darkgrey) !important;
   font-weight: 600 !important;
+  transition: all 1s, font-weight 0s !important;
 }
 
 .active:hover {
