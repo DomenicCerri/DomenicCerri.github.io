@@ -532,6 +532,10 @@ nav {
   cursor: pointer;
 }
 
+.black {
+  background: #000000;
+}
+
 .replit {
   background: rgb(28, 35, 51);
 }
